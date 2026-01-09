@@ -1,13 +1,14 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs19
+FROM nikolaik/python-nodejs:python3.10-nodejs18
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg \
+    && apt-get install -y ffmpeg \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-COPY . /app/
-WORKDIR /app/
-RUN python3 -m pip install --upgrade pip setuptools
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+WORKDIR /app
+COPY . /app
 
-CMD python3 -m VenomX
+RUN python3 -m pip install --upgrade pip setuptools \
+    && pip3 install --no-cache-dir -r requirements.txt
+
+CMD ["python3", "-m", "VenomX"]
