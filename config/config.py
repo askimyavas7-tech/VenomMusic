@@ -45,12 +45,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002970992169"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7048354045").split())
+    map(int, getenv("OWNER_ID", "7950993603").split())
 )  # Input type must be interger
 
 
@@ -111,11 +111,11 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/TomatoFist"
+    "SUPPORT_CHANNEL", "https://t.me/yasamakbuysa"
 )
 
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/Itz_venom_family"
+    "SUPPORT_GROUP", "https://t.me/yasamakbuysa"
 )  
 
 
@@ -196,42 +196,42 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://te.legra.ph/file/7d9c0fec898bbee09ba95.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/95fcd2ec79b527ae3fac4.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://te.legra.ph/file/f739e6067725fa88ce8d3.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "https://te.legra.ph/file/95fcd2ec79b527ae3fac4.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://te.legra.ph/file/c66abbf490158487fdb72.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "https://te.legra.ph/file/3d130381bf5945c139023.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
     "TELEGRAM_VIDEO_URL",
-    "https://te.legra.ph/file/d3663021fb51e14a84aa9.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "https://te.legra.ph/file/248e6858de3f2e37393c1.jpg",
+    "https://telegra.ph/file/3e72df6ef787df25f008e.jpg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
